@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: ${rootProject.name}
+logging:
+  level:
+    org.zalando.logbook: TRACE
+logbook:
+  format:
+    style: json
+  obfuscate:
+    headers:
+      - Authorization
+      - X-Secret
+    parameters:
+      - access_token
+      - password
+  write:
+    max-body-size: 4096
+  minimum-status: 400
+  strategy: status-at-least
+  exclude: /favicon.ico
+info:
+  application:
+    name: ${rootProject.name}
+    version: ${version}

@@ -1,0 +1,12 @@
+%YAML 1.2
+--- # Devops Stuff
+Task: Devops Stuff #Task
+To Do:
+  - add ci to the project #todo
+  - make the project build predictable, independent from the machine and isolated from the environment #todo
+  - make the project run predictable, independent from the machine and isolated from the environment #todo
+
+---
+Bugs:
+  - Fixed:
+    - Todo file does not contain the tasks needed to be done
