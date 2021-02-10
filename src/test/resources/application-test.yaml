@@ -4,8 +4,6 @@ spring:
       - test
 
 ---
-spring:
-  profiles: test
 logging:
   level:
     org.zalando.logbook: TRACE
