@@ -29,3 +29,12 @@ to  embed a custom `buildSrc` for the company builds.
 If multi module setup is used, modules can override default versions either by adding a `buildscript` with a 
 `apply(from = "<local.versions.file>")` closure, by adding custom`extra` properties to `buildscript` closure, or by 
 adding a default `versions.gradle.kts` on the root of the module.
+
+## Docker
+
+There is a Dockerfile to build the project with docker but there's a more advanced version on `docker/app/Dockerfile`
+that uses layered jars to and optimizes build times by reusing layers.
+
+The latter also creates an app image and can also be run with `run.sh` or `run.bat` scripts.
+
+Please check your host configuration for ports and so before running any docker command.
