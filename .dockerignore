@@ -1,0 +1,27 @@
+# Non-source files
+.gitattributes
+.gitignore
+Dockerfile
+README.md
+
+# Non-source directories
+docker
+docs
+gradle/*
+.gradle
+.idea
+.git
+
+# Gradle binaries
+gradlew
+gradlew.bat
+
+# gradle build stuff, except libs folder
+buildSrc/.gradle
+buildSrc/build
+build/classes
+build/generated
+build/kotlin
+build/resources
+build/tmp
+build/bootJarMainClassName

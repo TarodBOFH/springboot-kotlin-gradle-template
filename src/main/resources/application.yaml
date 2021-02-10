@@ -8,8 +8,6 @@ spring:
   jackson:
     deserialization:
       FAIL_ON_NULL_FOR_PRIMITIVES: true
-server:
-  port: 9091
 logging:
   level:
     org.zalando.logbook: TRACE
@@ -25,7 +23,7 @@ logbook:
       - password
   write:
     max-body-size: 4096
-  minimum-status: 200
+  minimum-status: 400
   strategy: status-at-least
   exclude: /favicon.ico
   filter:
