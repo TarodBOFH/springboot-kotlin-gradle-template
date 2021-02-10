@@ -22,8 +22,10 @@ Convention over Configuration.
 
 The template offers a hook, `versions.gradle.kts`, sitting on `buildSrc` (that includes the default versions).
 It also loads `versions.gradle.kts` sitting on root project to override the versions in `buildSrc`. The whole idea is to 
-allow a company package `buildSrc` in either a git subtree, or a custom gradle distribution (see https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#sec:custom_gradle_distribution)
+allow a company package `buildSrc` in either a git subtree, or a custom gradle distribution 
+(see https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#sec:custom_gradle_distribution)
 to  embed a custom `buildSrc` for the company builds.
 
 If multi module setup is used, modules can override default versions either by adding a `buildscript` with a 
-`apply(from = "<local.versions.file>")` closure, or by adding custom`extra` properties to `buildscript` closure.
+`apply(from = "<local.versions.file>")` closure, by adding custom`extra` properties to `buildscript` closure, or by 
+adding a default `versions.gradle.kts` on the root of the module.
