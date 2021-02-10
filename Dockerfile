@@ -1,4 +1,4 @@
-FROM gradle:6.6.1-jdk11
+FROM gradle:6.8.2-jdk11
 
 LABEL maintainer="\"Juan Ara\" <bofh@juanylaura.es>"
 
